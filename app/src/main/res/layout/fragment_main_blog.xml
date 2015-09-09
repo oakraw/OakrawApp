@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cardList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingTop="2dp"
+        android:paddingBottom="100dp"/>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+        <FrameLayout
+            android:id="@+id/no_internet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/text_color_dark_bg"
+            android:visibility="gone"
+            android:foreground="@drawable/click">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No internet connection"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textColor="@color/title_bar"/>
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

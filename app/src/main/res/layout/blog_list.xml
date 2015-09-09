@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:foreground="@drawable/click"
+    android:layout_marginTop="2dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginRight="4dp">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/promo" />
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2015/04/17"
+        android:textColor="@color/text_color_dark_bg"
+        android:textSize="10sp"
+        android:layout_margin="16dp"/>
+
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_dark_bg"
+        android:text="Andorid Development"
+        android:background="@drawable/round_corner"
+        android:padding="6dp"
+        android:layout_gravity="right"
+        android:layout_margin="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:background="@drawable/gradient"
+            android:padding="16dp">
+
+            <com.oakraw.oakrawapp.custom.CustomTextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[Android Dev Series #0] ติดตั้ง Android Studio และ Android SDK"
+                android:textColor="@color/text_color_dark_bg"
+                android:textSize="18sp"
+                android:layout_marginBottom="4dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
